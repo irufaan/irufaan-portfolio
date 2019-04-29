@@ -1,6 +1,9 @@
 {
   "name": "server",
   "version": "1.0.0",
+  "engines": {
+    "node": "10.15.0"
+  },
   "description": "Simple portfolio website using SPA(Single Page Application)(React Framework)",
   "main": "server.js",
   "scripts": {
