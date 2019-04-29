@@ -1,4 +1,4 @@
-'use strict';
+
 
 const autoprefixer = require('autoprefixer');
 const path = require('path');
@@ -164,6 +164,7 @@ module.exports = {
                 loader: require.resolve('css-loader'),
                 options: {
                   importLoaders: 1,
+                
                 },
               },
               {
