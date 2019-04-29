@@ -1,4 +1,4 @@
-'use strict';
+
 
 const autoprefixer = require('autoprefixer');
 const path = require('path');
@@ -173,7 +173,7 @@ module.exports = {
                   fallback: {
                     loader: require.resolve('style-loader'),
                     options: {
-                      hmr: false,
+                      hmr: true,
                     },
                   },
                   use: [
