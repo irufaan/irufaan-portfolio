@@ -11,6 +11,7 @@ import Contact from './components/pages/Contact';
 import Footer from './components/navigation/Footer';
 import './App.css';
 
+
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
