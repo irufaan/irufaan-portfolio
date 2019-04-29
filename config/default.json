@@ -1,0 +1,5 @@
+{
+  "mongoURI": "mongodb://irufaan:irufaan123@ds133256.mlab.com:33256/irufaan-portfolio",
+  "sendGridKey": "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",
+  "emailAddress": "irufaan0121@gmail.com"
+}

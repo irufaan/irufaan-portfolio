@@ -1,0 +1,91 @@
+$nav-height: 55px;
+
+.desktop-nav-active .nav__list__section__text {
+    text-decoration: underline;
+}
+
+
+.nav {
+    height: $nav-height;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    top:0;
+    padding: 0;
+
+    &__list {
+        height: 100%;
+        background: $dark-blue;
+        padding: 0;
+        margin: 0 auto;
+        &__section {
+
+            height: $nav-height;
+            display: flex;
+            list-style: none;
+            align-items: center;
+            color: white;
+            margin: 0 22.5px 0 0;
+            text-decoration: none;
+            font-size: 1em;
+
+            &__text {
+                transition: color 200ms ease;
+            }
+
+            &__mobile-icon {
+                display: none;
+            }
+            
+
+            &--cta {
+                margin-left: auto;
+                background-color: $blue;
+                padding: 0 10px;
+            }
+            &__item {
+                &__img-container {
+                    height: 40px;
+                    padding: 10px 0;
+                    position: relative;
+                    bottom: 2px;
+                    &__img {
+                        height: 100%;
+                        margin-right: 15px;
+                    }
+                }
+                
+
+            }
+        }
+    }
+}
+
+@media only screen and  (max-width: 500px) {
+    .nav {
+        &__list {
+            &__section {
+                display: none;
+                
+                &:first-child {
+                    display: block;
+                    margin-left: auto;
+                }
+                
+                &__item {
+                    &__img-container {
+                        float: right;
+                        bottom: 4px;
+                    }
+                }
+                
+                &__mobile-icon {
+                    display: inline-block;
+                    padding: 15px 0;
+                    font-size: 1.5em;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
