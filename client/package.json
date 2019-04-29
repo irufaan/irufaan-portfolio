@@ -57,7 +57,7 @@
     "start-js": "node scripts/start.js",
     "start": "npm-run-all -p watch-css start-js",
     "build-js": "node scripts/build.js",
-    "build": "npm-run-all build-css build-js",
+    "build": "npm-run-all build-css build-js react-scripts",
     "test": "node scripts/test.js --env=jsdom"
   },
   "proxy": "http://localhost:5000",
@@ -96,7 +96,9 @@
       "json",
       "web.jsx",
       "jsx",
-      "node"
+      "node",
+      "css",
+      "scss"
     ]
   },
   "babel": {
